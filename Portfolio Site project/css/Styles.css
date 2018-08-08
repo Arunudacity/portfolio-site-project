@@ -1,0 +1,203 @@
+body {
+	background: white;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60em;
+}
+.top {
+	position: relative;
+	order: 0;
+	width: 100%;
+	height: 150px;
+	border-bottom: 4px solid #8C9FB0;
+}
+.top .name, svg {
+	display: inline;
+}
+h3 {
+	padding-left: 0px;
+	color: lightgreen;
+	font-family: roboto;
+}
+img {
+	padding-top: 20px;
+	width: 100%;
+	padding-bottom: 20PX;
+}
+.name {
+	position: absolute;
+	right: 30px;
+}
+svg {
+	padding-top: 30px;
+	padding-left: 20px;
+	fill: #02b3e4;
+	filter: drop-shadow(4px 4px 4px #aaa);
+}
+.image1 {
+	order: 1;
+	padding-top: 50px;
+}
+.featuredwork {
+	order: 2;
+	font-size: 20px;
+	width: 100%;
+	padding-left: 20px;
+	color: #7d97ad;
+}
+.image2 {
+	order: 3;
+	width: 25%;
+	padding-right: 0px;
+}
+img:hover {
+	filter: drop-shadow(7px 7px 7px black);
+	cursor: pointer;
+}
+.image3 {
+	order: 4;
+	width: 25%;
+	padding-right: 0px;
+}
+.image4 {
+	order: 5;
+	width: 25%;
+}
+[class*="zocial-"]:before {
+	color: black;
+	display: inline-block;
+	font-family: 'zocial', sans-serif;
+	text-shadow: 3px 3px 3px #aaa;
+	width: 2em;
+	font-size: 30px;
+	padding-left: 105px;
+}
+footer {
+	padding-top: 10px;
+	width: 100%;
+	border-top: 4px solid #8C9FB0;
+	order: 6;
+}
+h1 {
+	font-family: 'Bitter', sans-serif;
+	color: orange;
+}
+figcaption {
+	font-size: 20px;
+	color: red;
+	cursor: pointer;
+}
+figcaption:hover {
+	font-size: 22px;
+}
+a, a:hover, a:active, a:visited, a:focus {
+	text-decoration: none;
+	color: red;
+	cursor: pointer;
+}
+a {
+	font-size: 20px;
+}
+footer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+@media screen and (max-width:360px) {
+	.container {
+		width: 100%;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 10px;
+		font-family: roboto;
+	}
+	footer {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	svg {
+		width: 10vh;
+		height: 10vh;
+		padding-top: 5px;
+	}
+	.top {
+		height: 80px;
+	}
+	.image1 {
+		order: 1;
+		padding-top: 30px;
+		height: 300px;
+	}
+	.image2 {
+		padding-right: 0px;
+		width: 100%;
+	}
+	.image3 {
+		padding-right: 0px;
+		width: 100%;
+	}
+	.image4 {
+		width: 100%;
+	}
+	.featuredwork {
+		font-size: 15px;
+		padding-left: 10px;
+	}
+	[class*="zocial-"]:before {
+		font-size: 20px;
+		padding-left: 12px;
+	}
+	a {
+		font-size: 15px;
+	}
+	figcaption {
+		font-size: 15px;
+	}
+	figcaption:hover {
+		font-size: 17px;
+	}
+}
+@media screen and (min-width:361px) and (max-width:800px) {
+	.container {
+		width: 100%;
+	}
+	svg {
+		width: 11vh;
+		height: 11vh;
+		padding-top: 20px;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: 20px;
+		padding-left: 30px;
+	}
+	[class*="zocial-"]:before {
+		font-size: 20px;
+		padding-left: 70px;
+	}
+	a {
+		font-size: 20px;
+	}
+	footer {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 50px;
+	}
+	.image2 {
+		width: 170px;
+	}
+	.image3 {
+		width: 170px;
+	}
+	.image4 {
+		width: 170px;
+	}
+}
